@@ -10,13 +10,13 @@ export default function Nav() {
                 <Link className='text-32 font-semibold' href='/'>onesim</Link>
                 <div className='flex gap-20 justify-center items-center'>
                     <div className='flex gap-10 items-center justify-center cursor-pointer'>
-                        <div className='font-semibold hover:text-blue'>Направления</div>
+                        <div className='font-semibold hover:text-blue text-15'>Направления</div>
                         <div className='w-[6px] h-[3px]'>
                             <Arrow />
                         </div>
                     </div>
-                    <div className='font-semibold'>Устройства совместимые с eSIM</div>
-                    <div className='font-semibold'>FAQ</div>
+                    <div className='font-semibold text-15'>Устройства совместимые с eSIM</div>
+                    <div className='font-semibold text-15'>FAQ</div>
                 </div>
             </div>
             <div className='flex py-[11px] w-full sm:w-auto min-w-[360px] px-20 gap-10 items-center justify-between bg-bg rounded'>
@@ -31,14 +31,14 @@ export default function Nav() {
                         <Person />
                     </div>
                     <div className='flex gap-10 items-center justify-center'>
-                        <div className='font-semibold hover:text-blue'>USD ($)</div>
+                        <div className='font-semibold hover:text-blue text-15'>USD ($)</div>
                         <div className='w-[6px] h-[3px]'>
                             <Arrow />
                         </div>
                     </div>
                 </div>
                 <div className='flex gap-10 items-center justify-center cursor-pointer'>
-                    <div className='font-semibold hover:text-blue'>Русский</div>
+                    <div className='font-semibold hover:text-blue text-15'>Русский</div>
                     <div className='w-[6px] h-[3px]'>
                         <Arrow />
                     </div>

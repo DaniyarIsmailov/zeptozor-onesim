@@ -7,10 +7,11 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  important: true,
   theme: {
     extend: {
       fontFamily: {
-        'semibold': 'TildaSansSemibold',
+        // 'semibold': 'TildaSansSemibold',
         'extrabold': 'TildaSansExtrabold',
         'bold': 'TildaSansBold'
       },
@@ -27,6 +28,8 @@ const config: Config = {
       },
       fontSize: {
         48: '48px',
+        40: '40px',
+        20: '20px',
         15: '15px',
         26: '26px',
         28: '28px',
@@ -37,17 +40,20 @@ const config: Config = {
         80: '80px',
         70: '70px',
         40: '40px',
-        20: '20px'
+        20: '20px',
+        10: '10px'
       },
       margin: {
         80: '80px',
         70: '70px',
         40: '40px',
-        20: '20px'
+        20: '20px',
+        10: '10px'
       },
     },
     borderRadius: {
-      DEFAULT: '10px'
+      DEFAULT: '10px',
+      full: '100%'
     },
     lineHeight: {
       100: '100%',
@@ -58,7 +64,8 @@ const config: Config = {
       40: '40px',
       20: '20px',
       10: '10px',
-      5: '5px'
+      5: '5px',
+      0: '0px'
     }
   },
   plugins: [
@@ -74,7 +81,7 @@ const config: Config = {
       //     }
       //   }
       // })
-    })
+    }),
   ],
 }
 export default config
