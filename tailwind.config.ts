@@ -50,10 +50,9 @@ const config: Config = {
         20: '20px',
         10: '10px'
       },
-    },
-    borderRadius: {
-      DEFAULT: '10px',
-      full: '100%'
+      borderRadius: {
+        DEFAULT: '10px',
+      },
     },
     lineHeight: {
       100: '100%',
