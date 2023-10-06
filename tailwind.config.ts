@@ -57,6 +57,7 @@ const config: Config = {
     lineHeight: {
       100: '100%',
       120: '120%',
+      110: '110%',
       150: '150%'
     },
     gap: {

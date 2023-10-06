@@ -2,7 +2,7 @@ import Rate from "./Rate";
 
 function Button({ active, text }: { active: boolean, text: string }) {
     return (
-        <div className={`'flex px-10 py-[12px] items-center justify-center rounded ${ active ? 'bg-orange text-white' : '' } font-semibold`}>{text}</div>
+        <div className={`flex px-10 py-[12px] items-center justify-center rounded ${ active ? 'bg-orange text-white' : '' } font-semibold`}>{text}</div>
     )
 }
 
@@ -56,7 +56,7 @@ export default function Info({ id }: { id: string }) {
                     <Rate rate={4} />
                 </div>
                 <div className='w-full h-[2px] mt-20 bg-[#E1E5EC]'></div>
-                <div className='flex w-full p-[5px] justify-between items-center flex-wrap rounded bg-bg'>
+                <div className='flex w-[376px] p-[5px] justify-between items-center flex-wrap rounded bg-bg'>
                     <Button active={true} text='Особенности' />
                     <Button active={false} text='Описание' />
                     <Button active={false} text='Операторы' />

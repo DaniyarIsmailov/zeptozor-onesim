@@ -1,11 +1,11 @@
-export default function Region({ region, categories, forRegion, price }: { region: string, categories:  string[], forRegion: string, price: string }) {
+export default function Region({ region, categories, forRegion, price, width }: { region: string, categories:  string[], forRegion: string, price: string, width?: string }) {
     let category = ''
     categories.forEach(c => category += `${c} eSIM, `)
     category = category.trim()
     category = category.slice(0, -1)
     return (
         <div className='inline-flex flex-col gap-20 rounded'>
-            <div className='flex flex-col px-10 justify-end w-[287px] h-[190px] rounded' style={{ backgroundImage: `url('images/regions/${region}.png')`, backgroundSize: '100%' }}>
+            <div className='flex flex-col px-10 justify-end h-[190px] rounded' style={{ backgroundImage: `url('images/regions/${region}.png')`, backgroundSize: '100%', width: (width ? width : '287px') }}>
                 <div className='font-[700] uppercase text-white'>onesim for</div>
                 <div className='font-[700] uppercase text-40 text-white'>{ region }</div>
             </div>
