@@ -8,7 +8,7 @@ export default function Auth() {
         <>
             <div className='w-full h-screen flex flex-col'>
                 <Nav />
-                <div className='w-full h-full flex bg-black items-center justify-center'>
+                <div className='w-full h-full px-20 flex items-center justify-center'>
                     <AuthConfirm />
                 </div>
             </div>

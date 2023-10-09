@@ -1,6 +1,6 @@
 export default function AuthForm() {
     return (
-        <div className='w-[388px] flex flex-col items-center p-20 rounded bg-bg gap-20'>
+        <div className='w-full sm:w-[388px] flex flex-col items-center p-20 rounded bg-bg gap-20'>
             <div className='text-20 font-semibold leading-120'>Войти / Зарегистрироваться</div>
             <div className='text-gray leading-150'>Быстрый вход</div>
             <div className='flex gap-40'>
