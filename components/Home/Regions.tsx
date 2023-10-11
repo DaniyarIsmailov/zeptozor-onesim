@@ -4,22 +4,37 @@ import Region from "../Region"
 
 export default function Regions() {
     const regions = [
-        <Region region='europe' categories={['Региональные']} forRegion='Европы' price='$3.90 - $29.90' key={0} />,
-        <Region region='usa' categories={['Локальные']} forRegion='США' price='$3.90 - $29.90' />,
-        <Region region='france' categories={['Европейские', 'Локальные']} forRegion='Франции' price='$3.90 - $29.90' key={1} />,
-        <Region region='spain' categories={['Европейские', 'Локальные']} forRegion='Испании' price='$3.90 - $29.90' key={2} />,
-        <Region region='middle east' categories={['Региональные']} forRegion='Ближнего востока' price='$3.90 - $29.90' key={3} />,
-
-        <Region region='usa' categories={['Локальные']} forRegion='США' price='$3.90 - $29.90' key={4} />,
-        <Region region='france' categories={['Европейские', 'Локальные']} forRegion='Франции' price='$3.90 - $29.90' key={5} />,
-        <Region region='spain' categories={['Европейские', 'Локальные']} forRegion='Испании' price='$3.90 - $29.90' key={6} />,
-        <Region region='middle east' categories={['Региональные']} forRegion='Ближнего востока' price='$3.90 - $29.90' key={7} />,
-
-        <Region region='usa' categories={['Локальные']} forRegion='США' price='$3.90 - $29.90' key={8} />,
-        <Region region='france' categories={['Европейские', 'Локальные']} forRegion='Франции' price='$3.90 - $29.90' key={9} />,
-        <Region region='spain' categories={['Европейские', 'Локальные']} forRegion='Испании' price='$3.90 - $29.90' key={10} />,
-        <Region region='middle east' categories={['Региональные']} forRegion='Ближнего востока' price='$3.90 - $29.90' key={11} />
-    ]
+    {
+        region: 'europe',
+        categories: ['regional'],
+        forRegion: 'Европы',
+        price: '$3.90 - $29.90'
+    },
+    {
+        region: 'usa',
+        categories: ['local'],
+        forRegion: 'США',
+        price: '$3.90 - $29.90'
+    },
+    {
+        region: 'france',
+        categories: ['european', 'local'],
+        forRegion: 'Франции',
+        price: '$3.90 - $29.90'
+    },
+    {
+        region: 'spain',
+        categories: ['european', 'local'],
+        forRegion: 'Испании',
+        price: '$3.90 - $29.90'
+    },
+    {
+        region: 'middle east',
+        categories: ['regional'],
+        forRegion: 'Ближнего востока',
+        price: '$3.90 - $29.90'
+    }
+]
     return (
         <div className='w-full py-[40px]'>
             <div className='px-20 sm:px-80'>
@@ -31,7 +46,7 @@ export default function Regions() {
                 </div>
             </div>
             <div className='sm:hidden h-[20px]'></div>
-            <Carousel items={regions} />
+            <Carousel items={regions.map(i => <Region key={i.region} region={i.region} categories={i.categories} forRegion={i.forRegion} price={i.price} />)} />
         </div>
     )
 }
