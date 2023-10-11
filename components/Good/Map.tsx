@@ -67,13 +67,13 @@ export default function Map() {
                 <div className='text-gray leading-120'>Скорость и покрытие зависят от оператора и доступности сети</div>
                 <div className='w-full flex flex-wrap gap-y-10'>
                     {
-                        countries.map(c => <Country name={c.name} five={c.five} />)
+                        countries.map((c, index) => <Country key={index} name={c.name} five={c.five} />)
                     }
                 </div>
                 <div className='text-gray leading-120'>Дополнительное покрытие</div>
                 <div className='w-full flex flex-wrap gap-y-10'>
                     {
-                        additionally.map(c => <Country name={c.name} five={c.five} />)
+                        additionally.map((c, index) => <Country key={index} name={c.name} five={c.five} />)
                     }
                 </div>
             </div>
